@@ -79,7 +79,12 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(PORT, () => {
-    console.log(`Portfolio running at http://localhost:${PORT}`);
-    console.log(`Upload your photo at http://localhost:${PORT}/upload`);
-});
+// Only listen locally — Vercel handles this in production
+if (process.env.VERCEL !== '1') {
+    app.listen(PORT, () => {
+        console.log(`Portfolio running at http://localhost:${PORT}`);
+        console.log(`Upload your photo at http://localhost:${PORT}/upload`);
+    });
+}
+
+module.exports = app;
