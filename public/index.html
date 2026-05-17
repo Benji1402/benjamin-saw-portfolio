@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Saw | E-Portfolio</title>
+    <meta name="description" content="Professional e-portfolio of Benjamin Saw - Year 2 Business student at Temasek Polytechnic with a 3.8 GPA and 13 awards.">
+    <meta name="author" content="Benjamin Saw">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/profile.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <img src="images/profile.png" alt="Benjamin Saw" class="sidebar-avatar">
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#home" class="nav-icon active" aria-label="Home"><i class="fas fa-house"></i><span class="nav-label">Home</span></a></li>
+            <li><a href="#about" class="nav-icon" aria-label="About"><i class="fas fa-user"></i><span class="nav-label">About</span></a></li>
+            <li><a href="#education" class="nav-icon" aria-label="Education"><i class="fas fa-graduation-cap"></i><span class="nav-label">Education</span></a></li>
+            <li><a href="#skills" class="nav-icon" aria-label="Skills"><i class="fas fa-lightbulb"></i><span class="nav-label">Skills</span></a></li>
+            <li><a href="#experience" class="nav-icon" aria-label="Experience"><i class="fas fa-briefcase"></i><span class="nav-label">Experience</span></a></li>
+            <li><a href="#awards" class="nav-icon" aria-label="Awards"><i class="fas fa-trophy"></i><span class="nav-label">Awards</span></a></li>
+            <li><a href="#activities" class="nav-icon" aria-label="Activities"><i class="fas fa-users"></i><span class="nav-label">Activities</span></a></li>
+            <li><a href="#contact" class="nav-icon" aria-label="Contact"><i class="fas fa-envelope"></i><span class="nav-label">Contact</span></a></li>
+        </ul>
+        <div class="sidebar-bottom">
+            <a href="https://www.linkedin.com/in/saw-benjamin" target="_blank" rel="noopener" class="sidebar-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i><span class="nav-label">LinkedIn</span></a>
+            <a href="mailto:bensaw1402@gmail.com" class="sidebar-social" aria-label="Email"><i class="fas fa-at"></i><span class="nav-label">Email</span></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+        <!-- HERO -->
+        <section id="home" class="section hero-section">
+            <canvas id="particleCanvas" class="particle-canvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-badge">Welcome to my portfolio</div>
+                <h1 class="hero-name">Benjamin<br><span class="gradient-text">Saw</span></h1>
+                <div class="hero-typing">
+                    <span id="typingText"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-sub">Year 2 Diploma in Business · Temasek Polytechnic</p>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num" data-target="3.8" data-decimal="true">0</span><span class="stat-lbl">GPA</span></div>
+                    <div class="stat-sep"></div>
+                    <div class="stat"><span class="stat-num" data-target="13">0</span><span class="stat-lbl">Awards</span></div>
+                    <div class="stat-sep"></div>
+                    <div class="stat"><span class="stat-num" data-target="14">0</span><span class="stat-lbl">Modules</span></div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-glow">Get In Touch</a>
+                    <a href="#about" class="btn-ghost">Explore <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="scroll-hint"><div class="scroll-dot"></div></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="sec-head"><span class="tag">Introduction</span><h2 class="sec-title">About Me</h2><div class="sec-line"></div></div>
+                <div class="about-layout">
+                    <div class="about-text fade-up">
+                        <p>Hello! I'm <strong>Benjamin Saw</strong>, an 18-year-old Year 2 student at <strong>Temasek Polytechnic</strong>, pursuing a Diploma in Business. With a strong academic record of <strong>3.8 GPA</strong> and <strong>13 awards and achievements</strong>, I am passionate about business analytics, market research, and data-driven decision-making.</p>
+                        <p>I'm currently pursuing the <strong>National Youth Achievement Award (NYAA)</strong>, continually pushing myself to grow both personally and professionally. My journey combines academic excellence with practical experience in teamwork, leadership, and service.</p>
+                        <div class="about-chips">
+                            <div class="chip"><i class="fas fa-chart-line"></i><span>Data Analytics</span></div>
+                            <div class="chip"><i class="fas fa-bullhorn"></i><span>Marketing</span></div>
+                            <div class="chip"><i class="fas fa-handshake"></i><span>Leadership</span></div>
+                            <div class="chip"><i class="fas fa-award"></i><span>NYAA (In Progress)</span></div>
+                        </div>
+                    </div>
+                    <div class="about-cards fade-up">
+                        <div class="mini-card"><i class="fas fa-user-graduate"></i><h3>Student</h3><p>Temasek Polytechnic</p></div>
+                        <div class="mini-card accent"><i class="fas fa-star"></i><h3>GPA 3.8</h3><p>Academic Excellence</p></div>
+                        <div class="mini-card"><i class="fas fa-medal"></i><h3>13 Awards</h3><p>Recognitions</p></div>
+                        <div class="mini-card accent"><i class="fas fa-location-dot"></i><h3>Singapore</h3><p>Based in SG</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section alt-bg">
+            <div class="container">
+                <div class="sec-head"><span class="tag">Academic Journey</span><h2 class="sec-title">Education</h2><div class="sec-line"></div></div>
+                <div class="edu-timeline">
+                    <div class="edu-card fade-up">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-body">
+                            <div class="edu-top"><h3>Diploma in Business</h3><span class="edu-date">Apr 2025 — Present</span></div>
+                            <h4>Temasek Polytechnic</h4>
+                            <div class="edu-gpa"><i class="fas fa-star"></i> GPA: 3.8</div>
+                            <p>Completed 14 relevant modules including:</p>
+                            <ul>
+                                <li>Marketing Fundamentals</li>
+                                <li>Business Technology &amp; Analytics</li>
+                                <li>Statistics for Business</li>
+                                <li>Business Psychology and Management</li>
+                                <li>Effective Communications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="edu-card fade-up">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-body">
+                            <div class="edu-top"><h3>GCE 'O' Levels</h3><span class="edu-date">Jan 2021 — Dec 2024</span></div>
+                            <h4>Hai Sing Catholic School</h4>
+                            <p><strong>Obtained 7 credits</strong></p>
+                            <p>Achieved distinctions in:</p>
+                            <ul>
+                                <li>English Language</li>
+                                <li>Additional Mathematics</li>
+                                <li>Mathematics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="sec-head"><span class="tag">What I Bring</span><h2 class="sec-title">Skills</h2><div class="sec-line"></div></div>
+                <h3 class="sub-heading"><i class="fas fa-code"></i> Technical / Domain Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card fade-up"><div class="sk-icon"><i class="fas fa-chart-line"></i></div><h4>Market Research &amp; Analytics</h4><p>Experienced in uncovering industry trends, customer behaviors, and opportunities to aid business and marketing strategies through a ten-week marketing simulation.</p></div>
+                    <div class="skill-card fade-up"><div class="sk-icon"><i class="fas fa-table"></i></div><h4>Excel &amp; Power BI</h4><p>Skilled in digital data analytical tools — formulas, tables, graphs, and diagrams — providing insights to improve efficiency and data-driven decisions.</p></div>
+                    <div class="skill-card fade-up"><div class="sk-icon"><i class="fas fa-database"></i></div><h4>Data Analysis</h4><p>Proficient in analysing datasets, identifying key insights, and transforming data into practical recommendations highlighting KPIs and industry trends.</p></div>
+                    <div class="skill-card fade-up"><div class="sk-icon"><i class="fas fa-people-group"></i></div><h4>Teamwork &amp; Communication</h4><p>Competent in different group settings and communication frameworks to support daily operations and administrative tasks.</p></div>
+                    <div class="skill-card fade-up"><div class="sk-icon"><i class="fas fa-chart-pie"></i></div><h4>Business Economics</h4><p>Familiar with Supply and Demand, Elasticity, and Market Structures — applied in evaluating Apple Inc.'s strategic decisions and market dominance.</p></div>
+                </div>
+                <h3 class="sub-heading"><i class="fas fa-star"></i> Generic Skills</h3>
+                <div class="soft-grid">
+                    <div class="soft-card fade-up"><i class="fas fa-bolt"></i><h4>Adaptability</h4><p>Quick response to unexpected situations; willing to learn and improve.</p></div>
+                    <div class="soft-card fade-up"><i class="fas fa-crown"></i><h4>Leadership</h4><p>Taking up responsibilities and going the extra mile.</p></div>
+                    <div class="soft-card fade-up"><i class="fas fa-heart"></i><h4>Interpersonal</h4><p>Building positive relationships through communication and empathy.</p></div>
+                    <div class="soft-card fade-up"><i class="fas fa-brain"></i><h4>Critical Thinking</h4><p>Problem-solving in high-stress environments with logical reasoning.</p></div>
+                    <div class="soft-card fade-up"><i class="fas fa-clock"></i><h4>Time Management</h4><p>Prioritising important and urgent tasks to meet deadlines.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section alt-bg">
+            <div class="container">
+                <div class="sec-head"><span class="tag">Professional Journey</span><h2 class="sec-title">Work Experience</h2><div class="sec-line"></div></div>
+                <div class="exp-card fade-up">
+                    <div class="exp-badge"><i class="fas fa-utensils"></i></div>
+                    <div class="exp-body">
+                        <div class="exp-top"><h3>Service Crew</h3><span class="exp-date">Dec 2024 — Feb 2025</span></div>
+                        <h4>Saizeriya</h4>
+                        <ul>
+                            <li>Demonstrated adaptability and ability to multitask in a high-pressure, fast-paced operational environment.</li>
+                            <li>Effectively collaborated with colleagues to maintain high service efficiency and smooth operations even when understaffed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AWARDS -->
+        <section id="awards" class="section">
+            <div class="container">
+                <div class="sec-head"><span class="tag">Recognitions</span><h2 class="sec-title">Awards &amp; Achievements</h2><div class="sec-line"></div></div>
+                <div class="award-hero fade-up">
+                    <div class="award-trophy"><i class="fas fa-trophy"></i></div>
+                    <div class="award-info">
+                        <h3>Edusave Good Progress Award</h3>
+                        <span class="award-org">Ministry of Education (MOE) — 2025</span>
+                        <p>Recognised for being in the top 10% of the cohort for academic improvement, demonstrating strong adaptability and a continuous learning mindset.</p>
+                    </div>
+                </div>
+                <div class="award-row">
+                    <div class="award-stat fade-up">
+                        <div class="big-num">13</div>
+                        <p>Total Awards &amp; Achievements earned throughout academic and co-curricular journey</p>
+                    </div>
+                    <div class="award-stat nyaa fade-up">
+                        <div class="nyaa-badge"><i class="fas fa-mountain-sun"></i></div>
+                        <h4>NYAA Award</h4>
+                        <p>Currently pursuing the National Youth Achievement Award, developing holistic skills and community involvement.</p>
+                        <span class="status-pill"><i class="fas fa-spinner fa-spin"></i> In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVITIES -->
+        <section id="activities" class="section alt-bg">
+            <div class="container">
+                <div class="sec-head"><span class="tag">Beyond Academics</span><h2 class="sec-title">Co-Curricular Activities</h2><div class="sec-line"></div></div>
+                <div class="act-grid">
+                    <div class="act-card fade-up">
+                        <div class="act-icon"><i class="fas fa-bullhorn"></i></div>
+                        <div class="act-top"><h3>Business Ambassadors</h3><span>2025 — Present</span></div>
+                        <h4>Sub Community, Temasek Polytechnic</h4>
+                        <ul>
+                            <li>Contributed to major school events representing Temasek Poly, displaying professionalism.</li>
+                            <li>Support different types of event operations with different teams, strengthening teamwork skills and adaptability.</li>
+                        </ul>
+                    </div>
+                    <div class="act-card fade-up">
+                        <div class="act-icon"><i class="fas fa-robot"></i></div>
+                        <div class="act-top"><h3>Robotics Club</h3><span>2021 — 2024</span></div>
+                        <h4>Member, Hai Sing Catholic School</h4>
+                        <ul>
+                            <li>Actively participated in nationwide events, working with a team to design and execute innovative solutions.</li>
+                            <li>Enhanced team collaboration and coordination skills through hands-on engineering projects.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="tag">Reach Out</span>
+                    <h2 class="sec-title">Let's Connect</h2>
+                    <div class="sec-line"></div>
+                    <p class="sec-sub">Ready to collaborate or just want to say hello?</p>
+                </div>
+                <div class="contact-box fade-up">
+                    <h3 class="contact-heading">Get In Touch</h3>
+                    <p class="contact-desc">I'm always open to discussing new opportunities, collaborating on exciting projects, or simply connecting with fellow professionals. Feel free to reach out!</p>
+                    <div class="contact-cards">
+                        <a href="https://www.linkedin.com/in/saw-benjamin" target="_blank" rel="noopener" class="c-card" id="linkedinLink">
+                            <i class="fab fa-linkedin"></i>
+                            <div><strong>LinkedIn</strong><span>Professional networking</span></div>
+                        </a>
+                        <a href="mailto:bensaw1402@gmail.com" class="c-card" id="emailLink">
+                            <i class="fas fa-envelope"></i>
+                            <div><strong>Email</strong><span>Direct communication</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="msg-box fade-up">
+                    <h3 class="contact-heading">Send a Message</h3>
+                    <form id="contactForm" class="msg-form">
+                        <div class="field-row">
+                            <div class="field"><label for="contactName">Your Name</label><input type="text" id="contactName" placeholder="John Doe" required></div>
+                            <div class="field"><label for="contactEmail">Your Email</label><input type="email" id="contactEmail" placeholder="john@example.com" required></div>
+                        </div>
+                        <div class="field"><label for="contactMessage">Message</label><textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea></div>
+                        <button type="submit" class="btn-glow btn-full" id="submitBtn"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="msg-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Message sent successfully! I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Benjamin Saw. All rights reserved.</p>
+            <p>References available upon request.</p>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
