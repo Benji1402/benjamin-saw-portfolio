@@ -114,14 +114,25 @@ a{text-decoration:none;color:inherit}ul{list-style:none}
 
 /* ========== SKILLS ========== */
 .sub-heading{font-family:'Outfit',sans-serif;font-size:1.15rem;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:8px}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;margin-bottom:40px}
-.skill-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:all .3s}
-.skill-card:hover{transform:translateY(-3px);border-color:var(--primary);box-shadow:0 6px 24px rgba(34,124,242,0.1)}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:40px}
+.skill-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:0;overflow:hidden;transition:all .3s}
+.skill-card:hover{transform:translateY(-4px);border-color:var(--primary);box-shadow:0 8px 28px rgba(34,124,242,0.12)}
+.skill-img-wrap{width:100%;aspect-ratio:16 / 10;background:#060b13;overflow:hidden;position:relative;padding:10px 14px 14px 14px;border-bottom:1px solid var(--border);display:flex;flex-direction:column}
+.window-header{display:flex;align-items:center;height:22px;position:relative;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.03);padding-bottom:6px}
+.window-dots{display:flex;gap:5px;align-items:center}
+.window-dot{width:7px;height:7px;border-radius:50%}
+.window-dot.red{background:#ff5f56}
+.window-dot.yellow{background:#ffbd2e}
+.window-dot.green{background:#27c93f}
+.window-address{position:absolute;left:50%;transform:translateX(-50%);font-size:.65rem;color:rgba(200,215,235,0.35);font-family:monospace;background:rgba(255,255,255,0.03);padding:1px 8px;border-radius:4px;border:1px solid rgba(255,255,255,0.05);max-width:65%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.skill-img{width:100%;height:calc(100% - 22px);object-fit:cover;border-radius:6px;border:1px solid rgba(255,255,255,0.08);box-shadow:0 4px 12px rgba(0,0,0,0.3);transition:transform .5s cubic-bezier(.4,0,.2,1),box-shadow .5s ease;display:block}
+.skill-card:hover .skill-img{transform:scale(1.02) translateY(-1px);box-shadow:0 6px 18px rgba(34,124,242,0.2)}
+.skill-card .sk-icon{margin:18px 22px 10px}
 .sk-icon{width:44px;height:44px;border-radius:11px;background:rgba(34,124,242,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:14px;transition:background .3s}
 .skill-card:hover .sk-icon{background:rgba(34,124,242,0.22)}
 .sk-icon i{font-size:1.1rem;color:var(--primary)}
-.skill-card h4{font-size:.98rem;margin-bottom:8px;font-family:'Outfit',sans-serif}
-.skill-card p{font-size:.84rem;color:var(--dim);line-height:1.6}
+.skill-card h4{font-size:.98rem;margin-bottom:8px;font-family:'Outfit',sans-serif;padding:0 22px}
+.skill-card p{font-size:.84rem;color:var(--dim);line-height:1.6;padding:0 22px 22px}
 
 .soft-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:14px}
 .soft-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center;transition:all .3s}
@@ -143,14 +154,19 @@ a{text-decoration:none;color:inherit}ul{list-style:none}
 .exp-body li{color:var(--dim);font-size:.86rem;margin-bottom:4px}
 
 /* ========== AWARDS ========== */
-.award-hero{display:flex;gap:24px;background:linear-gradient(135deg,rgba(34,124,242,0.1),rgba(87,183,242,0.04));border:1px solid var(--primary);border-radius:18px;padding:32px;margin-bottom:24px}
+.award-hero{display:flex;gap:24px;background:linear-gradient(135deg,rgba(34,124,242,0.1),rgba(87,183,242,0.04));border:1px solid var(--primary);border-radius:18px;padding:32px;margin-bottom:24px;max-width:780px;margin-left:auto;margin-right:auto}
 .award-hero:hover{box-shadow:0 8px 36px rgba(34,124,242,0.15)}
 .award-trophy{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#f5c542,#e8a317);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 18px rgba(245,197,66,0.25)}
 .award-trophy i{font-size:1.5rem;color:#fff}
 .award-info h3{font-family:'Outfit',sans-serif;font-size:1.2rem;margin-bottom:2px}
 .award-org{font-size:.82rem;color:var(--accent);font-weight:600;display:block;margin-bottom:8px}
 .award-info p{font-size:.88rem;color:var(--dim)}
-.award-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.hackathon-photo-wrap{position:relative;border-radius:18px;overflow:hidden;margin:0 auto 24px;max-width:780px;border:1px solid var(--border);background:var(--card);aspect-ratio:4 / 3;box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+.hackathon-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.hackathon-photo-wrap:hover .hackathon-photo{transform:scale(1.02)}
+.hackathon-caption{position:absolute;bottom:0;left:0;right:0;padding:14px 22px;background:linear-gradient(transparent,rgba(10,17,32,0.9));color:var(--text);font-size:.82rem;font-weight:500;display:flex;align-items:center;gap:8px}
+.hackathon-caption i{color:var(--accent);font-size:.75rem}
+.award-row{display:grid;grid-template-columns:1fr;gap:18px}
 .award-stat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px;text-align:center;transition:all .3s}
 .award-stat:hover{transform:translateY(-3px);border-color:var(--accent)}
 .big-num{font-family:'Outfit',sans-serif;font-size:3.2rem;font-weight:900;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
